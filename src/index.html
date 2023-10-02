@@ -13,23 +13,29 @@
             <h1>CloudOptim</h1>
         </div>
     </header>
+
     <main>
+        <div class="col-md-4">
+            <button id="refresh-button" class="btn btn-primary btn-block mt-4">Actualiser</button>
+        </div>
         <section class="server-list">
-            <div class="server">
-                <h2>Serveur Test</h2>
-                <p>Statut : En ligne</p>
-                <p>CPU utilisé : 10%</p>
-                <p>Mémoire utilisée : 29%</p>
-                <button class="favorite-button">Favoris</button>
-            </div>
+           <h2>Serveurs</h2>
         </section>
         <div class="col-md-4">
             <button id="refresh-button" class="btn btn-primary btn-block mt-4">Actualiser</button>
         </div>
     </main>
+    <template id="server-template">
+         <div class="server">
+                <h2 class="server-name"></h2>
+                <p class="server-status"></p>
+                <p class="server-cpuUsage"></p>
+                <p class="server-memoryUsage"></p>
+                <button class="favorite-button">Favoris</button>
+    </template>
     <footer>
         <p>&copy; 2023 Adolfo</p>
     </footer>
-    <script src="app.js"></script>
+    <script src="../src/js/app.js"></script>
 </body>
 </html>
