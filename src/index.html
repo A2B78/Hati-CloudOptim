@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/base/reset.scss">
+    <link rel="stylesheet" href="./scss/app.scss">
+    <title>CloudOptim Dashboard</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>CloudOptim</h1>
+        </div>
+    </header>
+    <main>
+        <section class="server-list">
+            <div class="server">
+                <h2>Serveur Test</h2>
+                <p>Statut : En ligne</p>
+                <p>CPU utilisé : 10%</p>
+                <p>Mémoire utilisée : 29%</p>
+                <button class="favorite-button">Favoris</button>
+            </div>
+        </section>
+        <div class="col-md-4">
+            <button id="refresh-button" class="btn btn-primary btn-block mt-4">Actualiser</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Adolfo</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
