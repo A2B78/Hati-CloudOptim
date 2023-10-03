@@ -41,10 +41,18 @@ function refreshServerData() {
     });
 }
 
-document.getElementById('refresh-button').addEventListener('click', function () {
-    refreshServerData();
-});
-
+// document.getElementById('refresh-buttonT').addEventListener('click', function () {
+//     refreshServerData();
+// });
+// document.getElementById('refresh-buttonB').addEventListener('click', function () {
+//     refreshServerData();
+// });
+function addRefreshListener(buttonId) {
+    document.getElementById(buttonId).addEventListener('click', refreshServerData);
+  }
+  
+  addRefreshListener('refresh-buttonT');
+  addRefreshListener('refresh-buttonB');
 for (let i = 0; i < 9; i++) {
     loadServer(i);
 }
